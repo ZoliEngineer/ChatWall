@@ -30,6 +30,7 @@ Possible improvements (out of scope in this release):
 	-- Replace Memory<?>Storage with concurrent implementations (ConcurrentHasMap, or some non-blocking hash-map implementation if performance matters)
 	-- With proper threadsafe Storage implementation, the application is threadsafe, as all other classes are stateless
 - Implement proper exit logic
+- Add new time units to ChatLineFormatter (hours, days, etc...)
 
 
 
