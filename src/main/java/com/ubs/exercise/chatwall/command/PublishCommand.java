@@ -19,7 +19,7 @@ public class PublishCommand implements Command {
 
     @Override
     public List<String> execute(String commandString) {
-        String[] splitedCommand = commandString.split(PUBLISH_COMMAN_PART);
+        String[] splitedCommand = commandString.split(PUBLISH_COMMAND_PART);
         String userName = splitedCommand[0].trim();
         String message = splitedCommand[1].trim();
 
@@ -33,7 +33,7 @@ public class PublishCommand implements Command {
         if (Strings.isNullOrEmpty(commandLine)) {
             return false;
         } else {
-            return commandLine.contains(PUBLISH_COMMAN_PART);
+            return commandLine.contains(PUBLISH_COMMAND_PART);
         }
     }
 
